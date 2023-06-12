@@ -15,26 +15,27 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
+                <th>#</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Amount($)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td>1</td>
                 <td>Mark</td>
-                <td>otto</td>
+                <td>Otto</td>
                 <td>1000</td>
-                
             </tr>
             <tr>
+                <td>2</td>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>1500</td>
-                
             </tr>
             <tr>
+                <td>3</td>
                 <td>Jack</td>
                 <td>John</td>
                 <td>2000</td>
@@ -48,15 +49,14 @@
 
     <script>
         // Calculate and display the total
-        document.getElementById('total').textContent = "$" + calculateTotal();
+        document.getElementById('total').textContent = calculateTotal();
 
         function calculateTotal() {
-            var prices = [10, 15, 20];
-            var quantities = [2, 3, 1];
+            var amounts = [1000, 1500, 2000];
             var total = 0;
             
-            for (var i = 0; i < prices.length; i++) {
-                total += prices[i] * quantities[i];
+            for (var i = 0; i < amounts.length; i++) {
+                total += amounts[i];
             }
             
             return total;
