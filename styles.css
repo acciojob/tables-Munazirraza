@@ -1,5 +1,20 @@
-<style>
-  #total {
-    color: black;
-  }
-</style>
+
+/* Your CSS Code here. */
+.table{
+	border-collapse:collapse;
+	width:100%;
+	font:monospace;
+	text:end;
+	fw:bold;
+	
+}
+td{
+	text-align:center;
+}
+th{
+	background:black;
+	color:white;
+}
+.table:hover{
+	
+}
